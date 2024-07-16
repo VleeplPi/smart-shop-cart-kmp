@@ -51,8 +51,14 @@ kotlin {
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
             implementation(libs.voyager.navigator)
+            implementation(libs.voyager.navigator.screen.model)
+            implementation(libs.voyager.navigator.transitions)
+
             implementation(libs.kotlinx.coroutines.core)
             implementation(libs.koin.core)
+
+
+
         }
 
         commonTest.dependencies {
