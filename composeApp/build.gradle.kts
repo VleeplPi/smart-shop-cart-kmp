@@ -9,6 +9,7 @@ plugins {
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.compose)
     alias(libs.plugins.android.application)
+    alias(libs.plugins.realm.plugin)
 }
 
 kotlin {
@@ -55,6 +56,9 @@ kotlin {
             implementation(libs.voyager.navigator.transitions)
             implementation(libs.kotlinx.coroutines.core)
             implementation(libs.koin.core)
+
+            implementation(libs.mongo.db.realm)
+            implementation(libs.stately.common)
 
         }
 
