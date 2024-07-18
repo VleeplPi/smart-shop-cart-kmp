@@ -53,11 +53,8 @@ kotlin {
             implementation(libs.voyager.navigator)
             implementation(libs.voyager.navigator.screen.model)
             implementation(libs.voyager.navigator.transitions)
-
             implementation(libs.kotlinx.coroutines.core)
             implementation(libs.koin.core)
-
-
 
         }
 
@@ -72,6 +69,7 @@ kotlin {
             implementation(compose.uiTooling)
             implementation(libs.androidx.activityCompose)
             implementation(libs.kotlinx.coroutines.android)
+            implementation(libs.compose.ui.tooling.preview)
         }
 
         iosMain.dependencies {
